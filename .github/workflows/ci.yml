@@ -70,13 +70,13 @@ jobs:
         id: setup-python
         with:
           python-version: ${{ matrix.python }}
-      - uses: oleksiyrudenko/gha-git-credentials@v2.1.1-latest
+      - uses: oleksiyrudenko/gha-git-credentials@v2-latest
         with:
           global: true
           name: 'Oleksiy Rudenko'
           email: 'oleksiy.rudenko@domain.com'
           actor: 'OleksiyRudenko'
-          token: '${{ secrets.GL_PAT_WEB_CENTRAL }}'
+          token: '${{ secrets.GITHUB_TOKEN }}'
       - name: Retrieve pre-built distribution files
         uses: actions/download-artifact@v3
         with: {name: python-distribution-files, path: dist/}
