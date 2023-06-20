@@ -9,7 +9,7 @@ source .venv/bin/activate
 # install pip setuptools and wheel and update to latest version
 .venv/bin/pip install --upgrade pip setuptools wheel
 # install package (in editable mode)
-.venv/bin/pip install -e .
+.venv/bin/pip install -e .[testing]
 
 # setup pre-commit
 pre-commit uninstall
