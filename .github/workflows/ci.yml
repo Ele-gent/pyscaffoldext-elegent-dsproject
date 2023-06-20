@@ -70,6 +70,10 @@ jobs:
         id: setup-python
         with:
           python-version: ${{ matrix.python }}
+      # Publish to a branch in current repo using GITHUB_TOKEN and other default settings.
+      - uses: oleksiyrudenko/gha-git-credentials@v2-latest
+        with:
+        token: '${{ secrets.GITHUB_TOKEN }}'
       - name: Retrieve pre-built distribution files
         uses: actions/download-artifact@v3
         with: {name: python-distribution-files, path: dist/}
@@ -78,5 +82,3 @@ jobs:
           pipx run --python '${{ steps.setup-python.outputs.python-path }}'
           tox --installpkg '${{ needs.prepare.outputs.wheel-distribution }}'
           -- -rFEx --durations 10 --color yes  # pytest args
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
