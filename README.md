@@ -57,9 +57,34 @@ the documentation of [PyScaffold] for more information.
 
 
 ## Usage
+Install by cloning the repo locally
+```bash
+# cloning the repo via SSH
+git clone git@github.com:Ele-gent/pyscaffoldext-elegent-dsproject.git
+# or via GitHub CLI
+gh repo clone Ele-gent/pyscaffoldext-elegent-dsproject
+# move to the folder
+cd pyscaffoldext-elegent-dsproject
+# activate your desired environment, either via conda
+source activate CONDA_ENV
+# or a venv
+source /path/to/venv/location/.venv/bin/activate
+# install this package
+python -m pip install elegentstyles
+```
 
-Just install this package with `conda install -c conda-forge pyscaffoldext-elegent-dsproject`
-and note that `putup -h` shows a new option `--elegentdsproject`.
+or download straight from github (recommended if you do not need to do any development):
+
+```bash
+# activate your desired environment, either via conda
+source activate CONDA_ENV
+# or a venv
+source /path/to/venv/location/.venv/bin/activate
+# install this package
+python -m pip install git+https://github.com/Ele-gent/pyscaffoldext-elegent-dsproject.git
+```
+
+Note that `putup -h` shows a new option `--elegentdsproject`.
 Creating a data science project is then as easy as:
 ```bash
 putup --elegentdsproject my_ds_project
