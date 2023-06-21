@@ -5,7 +5,7 @@ channels:
   - pytorch
   # - fastai
 dependencies:
-  - python>=3.7
+  - python>=3.10
   - pip
   # BASICS
   - numpy
