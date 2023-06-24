@@ -1,4 +1,4 @@
-# pyscaffoldext-elegentdsproject
+# pyscaffoldext-elegent-dsproject
 
 [PyScaffold] extension tailored for *Elegent Data Science* projects. This extension is inspired by
 [pyscaffoldext-dsproject], and adjusts some of its settings to fit the Elegent needs.
@@ -84,13 +84,13 @@ source /path/to/venv/location/.venv/bin/activate
 python -m pip install git+https://github.com/Ele-gent/pyscaffoldext-elegent-dsproject.git
 ```
 
-Note that `putup -h` shows a new option `--elegentdsproject`.
+Note that `putup -h` shows a new option `--elegent-dsproject`.
 Creating a data science project is then as easy as:
 ```bash
-putup --elegentdsproject my_ds_project
+putup --elegent-dsproject my_ds_project
 ```
 
-The flag `--elegentdsproject` comprises additionally the flags `--markdown`, `--pre-commit` and `--no-skeleton`
+The flag `--elegent-dsproject` comprises additionally the flags `--markdown`, `--pre-commit` and `--no-skeleton`
 for convenience.
 
 <!-- pyscaffold-notes -->

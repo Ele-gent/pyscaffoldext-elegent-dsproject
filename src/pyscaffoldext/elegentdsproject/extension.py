@@ -19,7 +19,7 @@ NO_OVERWRITE = no_overwrite()
 class ElegentDSProject(Extension):
     """Template for data-science projects"""
 
-    name = "elegentdsproject"
+    name = "elegent-dsproject"
 
     def augment_cli(self, parser):
         """Augments the command-line interface parser

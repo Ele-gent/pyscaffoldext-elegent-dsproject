@@ -101,7 +101,7 @@ Then take a look into the `scripts` and `notebooks` folders.
 
 ## Note
 
-This project has been set up using [PyScaffold] ${version} and the [Elegent dsproject extension] ${elegentdsproject_version}.
+This project has been set up using [PyScaffold] ${version} and the [Elegent dsproject extension] ${elegent_dsproject_version}.
 
 [conda]: https://docs.conda.io/
 [pre-commit]: https://pre-commit.com/

@@ -33,7 +33,7 @@ jobs:
         git config --global user.name "Github Action"
     - name: Build and create demo
       run: |
-        putup demo-elegent-dsproject --elegentdsproject -d "Demonstration of a project generated with the Data Science project extension of PyScaffold" -u https://github.com/Ele-gent/pyscaffoldext-elegent-dsproject -l Proprietary
+        putup demo-elegent-dsproject --elegent-dsproject -d "Demonstration of a project generated with the Data Science project extension of PyScaffold" -u https://github.com/Ele-gent/pyscaffoldext-elegent-dsproject -l Proprietary
         cd demo-dsproject
         rm -rf .git # for github-action-push-to-another-repository to work
     - name: Push to dsproject-demo
