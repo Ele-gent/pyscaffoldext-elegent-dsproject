@@ -1,2 +1,4 @@
-.. _changes:
-.. include:: ../CHANGELOG.rst
+```{include} ../CHANGELOG.md
+:relative-docs: docs/
+:relative-images:
+```

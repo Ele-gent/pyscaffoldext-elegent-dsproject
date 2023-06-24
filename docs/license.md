@@ -1,7 +1,5 @@
-.. _license:
+# License
 
-=======
-License
-=======
-
-.. include:: ../LICENSE.txt
+```{literalinclude} ../LICENSE.txt
+:language: text
+```

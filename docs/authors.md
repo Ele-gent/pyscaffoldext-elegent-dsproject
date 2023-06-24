@@ -1,2 +1,4 @@
-.. _authors:
-.. include:: ../AUTHORS.rst
+```{include} ../AUTHORS.md
+:relative-docs: docs/
+:relative-images:
+```
