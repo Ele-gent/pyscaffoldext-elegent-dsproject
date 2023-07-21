@@ -69,8 +69,8 @@ cd pyscaffoldext-elegent-dsproject
 source activate CONDA_ENV
 # or a venv
 source /path/to/venv/location/.venv/bin/activate
-# install this package
-python -m pip install elegentstyles
+# install this package in editable mode
+python -m pip install -e pyscaffoldext-elegent-dsproject
 ```
 
 or download straight from github (recommended if you do not need to do any development):
