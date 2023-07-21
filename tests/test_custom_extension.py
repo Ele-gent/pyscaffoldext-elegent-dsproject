@@ -6,11 +6,11 @@ import pytest
 from pyscaffold import cli
 from pyscaffold.file_system import chdir
 
-from pyscaffoldext.elegentdsproject.extension import ElegentDSProject
+from pyscaffoldext.elegent_dsproject.extension import ElegentDsproject
 
 from .helpers import run, run_common_tasks
 
-EXT_FLAG = ElegentDSProject().flag
+EXT_FLAG = ElegentDsproject().flag
 
 # If you need to check logs with caplog, have a look on
 # pyscaffoldext-custom-extension's tests/conftest.py file and the
@@ -83,7 +83,7 @@ def test_new_project_does_not_fail_pre_commit(cwd, pre_commit, putup):
     # when we call putup with extensions and pre-commit
     name = "my_project"
     run(
-        f"{putup} --pre-commit --elegentdsproject -p my_package --namespace my.ns {name}"  # noqa
+        f"{putup} --pre-commit --elegent-dsproject -p my_package --namespace my.ns {name}"  # noqa
     )
     with cwd.join(name).as_cwd():
         # then the newly generated files should not result in errors when

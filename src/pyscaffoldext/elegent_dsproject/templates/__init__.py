@@ -2,7 +2,7 @@ from functools import partial
 
 from pyscaffold.templates import ScaffoldOpts, get_template
 
-from .. import __version__ as elegentdsproject_version
+from .. import __version__ as elegent_dsproject_version
 
 template = partial(get_template, relative_to=__name__)
 
@@ -17,5 +17,5 @@ def readme_md(opts: ScaffoldOpts) -> str:
         file content as string
     """
     opts["pkg"] = opts["package"].ljust(19)
-    opts["elegentdsproject_version"] = elegentdsproject_version
+    opts["elegent_dsproject_version"] = elegent_dsproject_version
     return template("readme_md").safe_substitute(opts)

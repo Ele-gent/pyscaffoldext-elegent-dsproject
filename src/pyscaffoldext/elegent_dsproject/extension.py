@@ -16,10 +16,10 @@ from .templates import readme_md, template
 NO_OVERWRITE = no_overwrite()
 
 
-class ElegentDSProject(Extension):
+class ElegentDsproject(Extension):
     """Template for data-science projects"""
 
-    name = "elegentdsproject"
+    _name = "elegent-dsproject"
 
     def augment_cli(self, parser):
         """Augments the command-line interface parser
