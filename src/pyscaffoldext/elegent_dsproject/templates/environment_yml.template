@@ -11,12 +11,12 @@ dependencies:
   - numpy
   - scipy
   - pandas
-  - tqdm
-  - click
+  # - tqdm
+  # - click
   - ipython
   # VISUALIZATION
   - matplotlib
-  - ipympl  # interactive matplotlib plots
+  # - ipympl  # interactive matplotlib plots
   - seaborn
   # - altair
   # - yellowbrick
