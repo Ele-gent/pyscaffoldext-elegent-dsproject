@@ -16,7 +16,7 @@ from .templates import readme_md, template
 NO_OVERWRITE = no_overwrite()
 
 
-class ElegentDSProject(Extension):
+class ElegentDsproject(Extension):
     """Template for data-science projects"""
 
     _name = "elegent-dsproject"

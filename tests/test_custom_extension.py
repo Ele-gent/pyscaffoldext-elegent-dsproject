@@ -6,11 +6,11 @@ import pytest
 from pyscaffold import cli
 from pyscaffold.file_system import chdir
 
-from pyscaffoldext.elegent_dsproject.extension import ElegentDSProject
+from pyscaffoldext.elegent_dsproject.extension import ElegentDsproject
 
 from .helpers import run, run_common_tasks
 
-EXT_FLAG = ElegentDSProject().flag
+EXT_FLAG = ElegentDsproject().flag
 
 # If you need to check logs with caplog, have a look on
 # pyscaffoldext-custom-extension's tests/conftest.py file and the
