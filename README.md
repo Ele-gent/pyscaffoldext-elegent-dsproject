@@ -96,6 +96,7 @@ for convenience.
 A more advanced usage example:
 
 ```shell
+putup project-0007-Acme --description="description"  -l="Proprietary"  --url https://github.com/Ele-gent/project-0007-Acme --save-config ./project-0007-Acme/config_pyscaffold.cfg  --elegent-dsproject  --elegent-github-actions  --venv -vv
 # only added information that is not mentioned above
 putup  \ #
 	project-0007-Acme  \ # NOTE: cannot start with a number
