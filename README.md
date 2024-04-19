@@ -93,6 +93,22 @@ putup --elegent-dsproject my_ds_project
 The flag `--elegent-dsproject` comprises additionally the flags `--markdown`, `--pre-commit` and `--no-skeleton`
 for convenience.
 
+A more advanced usage example:
+
+```shell
+# only added information that is not mentioned above
+putup  \ #
+	project-0007-Acme  \ # NOTE: cannot start with a number
+	--description="description"  \ #
+	-l="Proprietary"  \ #
+	--url https://github.com/Ele-gent/project-0007-Acme  \ #
+	--save-config ./project-0007-Acme/config_pyscaffold.cfg  \ #
+	--elegent-dsproject  \ # the Elegent datascience project look
+	--elegent-github-actions  \ #
+	--venv \ #
+	-vv  \ #
+```
+
 <!-- pyscaffold-notes -->
 
 ## Making Changes & Contributing
