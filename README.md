@@ -110,6 +110,22 @@ putup  \ #
 	-vv  \ #
 ```
 
+If you want to either port an existing project to the Elegent templates or update an existing project to a newer version of the templates, you will need the options `--force --no-skeleton`.
+
+```bash
+# go to the parent directory of your project
+cd go/to/that/folder
+# activate your environment where pyscaffold and all the side packages are installed
+conda activate pyscaffold_stable
+# run putup
+putup project-0007-Acme --force --no-skeleton --description="description"  -l="Proprietary"  --url https://github.com/Ele-gent/project-0007-Acme --save-config ./project-0007-Acme/config_pyscaffold.cfg  --elegent-dsproject  --elegent-github-actions  --venv -vv
+```
+
+**IMPORTANT**
+always use the exact same options as when you generated the project, eg the license, otherwise pyscaffold will fall back to default options. When in doubt, see the `config_pyscaffold.cfg` file in the package, this should normally contain all the previous information.
+
+You can use the option `-config ./config_pyscaffold.cfg` to use the same extensions, but you will still need to add the description and url
+
 <!-- pyscaffold-notes -->
 
 ## Making Changes & Contributing
